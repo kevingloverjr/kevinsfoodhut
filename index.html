@@ -15,8 +15,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="icon" href="hamburger.png" />
   </head>
   <body>
+    <div id="welcome-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img
+          src="images/welcome-burger.jpg"
+          alt="Welcome to Kevin's Food Hut"
+          class="modal-image"
+        />
+        <h2>ようこそ！ケビンのフードハットへ</h2>
+        <p>
+          本場のアメリカ料理をお楽しみください。<br />メニューをチェックして、お気に入りの一品を見つけましょう！
+        </p>
+        <p class="modal-hint">クリックしてウェブサイトを探索する</p>
+      </div>
+    </div>
     <header>
       <nav class="navbar">
         <div class="logo">ケビンのフードハット</div>
@@ -452,5 +468,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script type="module">
+      import "./main.js";
+    </script>
   </body>
 </html>

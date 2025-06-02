@@ -1,3 +1,24 @@
+// Welcome Modal
+const welcomeModal = document.getElementById("welcome-modal");
+const closeModalBtn = welcomeModal.querySelector(".close-modal");
+
+// Show modal when page loads
+window.addEventListener("load", () => {
+  welcomeModal.classList.add("show");
+  document.body.style.overflow = "hidden";
+});
+
+// Close modal when clicking the close button
+closeModalBtn.addEventListener("click", () => {
+  welcomeModal.classList.remove("show");
+  document.body.style.overflow = "auto";
+});
+
+// Close modal when clicking outside
+welcomeModal.addEventListener("click", (e) => {
+  welcomeModal.classList.remove("show");
+});
+
 // Mobile Navigation
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
